@@ -103,10 +103,6 @@ public class MainController {
         userService.deleteById(id);
         return "redirect:/admin";
     }
-    @GetMapping("/login")
-    public String showLoginForm() {
-        return "login";
-    }
 
     @Autowired
     public void setRoleRepository(RoleRepository roleRepository) {
